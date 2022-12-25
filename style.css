@@ -44,24 +44,95 @@ input {
   flex: 3;
   height: 100vh;
 
-  padding: 40px;
+  padding: 72px 0;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  background-color: #f7f7f7;
 }
 
-.signup .phrase {
-
+.pl40 {
+  padding-left: 40px;
 }
 
-.signup .form {
+.phrase {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.form-container {
+  padding: 40px;
+  box-shadow: 4px 2px 3px 1px rgba(0, 0, 0, 0.3);
+  background-color: white;
+}
+
+.form-container h1 {
+  color: #1a2d3c;
+  padding-left: 10px;
+  margin-bottom: 1rem;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.form {
+  width: 85%;
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .form-control {
   display: flex;
   flex-direction: column-reverse;
+  gap: 3px;
+}
+
+.form input {
+  max-width: 250px;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.form input:focus {
+  outline: 1px solid #2e516e;
+}
+
+.error {
+  outline: 1px solid red;
+}
+
+.form label {
+  color: #1a2d3c;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.button-container .btn-submit {
+  max-width: 200px;
+  padding: 15px 0px;
+
+  border: 0;
+  border-radius: 5px;
+  background-color: #596d48;
+
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-container a {
+  color: #596d48;
+  font-weight: bold;
 }

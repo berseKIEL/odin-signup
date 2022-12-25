@@ -23,47 +23,52 @@
         </div>
       </section>
       <section class="signup">
-        <p class="phrase">
-          This is a fake signup service. <br>
-          Still you can try it out to verify <br>
-          my HTML, CSS and Javascript knowledge
+        <p class="phrase pl40">
+          This is a fake signup service. <br />
+          Still you can try it out to verify my<br />
+          HTML, CSS and Javascript knowledge
         </p>
-        <form action="" class="form">
-          <div class="form-control">
-            <input type="text" id="fname">
-            <label for="fname">First Name</label>
-          </div>
+        <div class="form-container">
+          <h1>Let's do this!</h1>
+          <form action="" id="signup-form" class="form">
+            <div class="form-control">
+              <input type="text" id="fname" required />
+              <label for="fname">FIRST NAME</label>
+            </div>
 
-          <div class="form-control">
-            <input type="text" id="lname">
-            <label for="lname">Last Name</label>
-          </div>
+            <div class="form-control">
+              <input type="text" id="lname" required />
+              <label for="lname">LAST NAME</label>
+            </div>
 
-          <div class="form-control">
-            <input type="email" id="email">
-            <label for="email">Email</label>
-          </div>
+            <div class="form-control">
+              <input type="email" id="email" required />
+              <label for="email">EMAIL</label>
+            </div>
 
-          <div class="form-control">
-            <input type="number" id="phone">
-            <label for="phone">Phone Number</label>
-          </div>
+            <div class="form-control">
+              <input type="number" id="phone" required />
+              <label for="phone">PHONE NUMBER</label>
+            </div>
 
-          <div class="form-control">
-            <input type="password" id="password">
-            <label for="password">Password</label>
-          </div>
+            <div class="form-control">
+              <input type="password" id="password" required />
+              <label for="password">PASSWORD</label>
+            </div>
 
-          <div class="form-control">
-            <input type="password" id="passwordrepeat">
-            <label for="passwordrepeat">Confirm Password</label>
-          </div>
-
-          <button type="button">Create Account</button>
-        </form>
-        <span>Copyright &copy; BerseKIEL 2022
-        </span>
+            <div class="form-control">
+              <input type="password" id="passwordrepeat" required />
+              <label for="passwordrepeat">CONFIRM PASSWORD</label>
+            </div>
+          </form>
+        </div>
+        <div class="button-container pl40">
+          <button type="button" id="form-submit" class="btn-submit">Create Account</button>
+          <span>Already have an account? <a href="#"> Log In </a></span>
+        </div>
       </section>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
