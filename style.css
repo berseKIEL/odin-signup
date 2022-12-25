@@ -1,0 +1,67 @@
+body,
+input {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.background {
+  position: relative;
+  flex: 1.4;
+  background-color: rgb(61, 61, 61);
+  height: 100vh;
+}
+
+.background img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.background .title-container {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-container h1 {
+  font-size: 3.5vw;
+  font-family: "Black Ops One", cursive;
+  color: antiquewhite;
+}
+
+.signup {
+  flex: 3;
+  height: 100vh;
+
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.signup .phrase {
+
+}
+
+.signup .form {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column-reverse;
+}
